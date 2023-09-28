@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/*
+全体 ヘッダー、メインの2つで構成
+*/
+body {
+  font-family: 'Pixelify Sans', "cursive", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 190px 1fr;
+}
+
+/*
+ヘッダー ヘッダーロゴ、ボタン3つで構成
+*/
+header {
+  background-color: #454545;
+  /* border: 2px solid #fff; */
+  display: grid;
+  grid-template-columns: 190px 1fr;
+}
+/* .header-logo {
+  border: 1px solid #ffff00;
+} */
+.header-button-area {
+  /* border: 1px solid #ff00ff; */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 180px 180px 180px;
+  justify-content: end;
+  align-items: center;
+  column-gap: 30px;
+}
+.header-icon {
+  display: block;
+  padding: 40px;
+}
+
+/*
+ボタン
+*/
+.button {
+  display: inline-block;
+  width: 180px;
+  height: 150px;
+  padding: 30% 0;
+  color: #333;
+  font-weight: bold;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 3px 3px 0 #bbb;
+  transition: box-shadow 0.25s;
+}
+.button:hover {
+  box-shadow: 0 0 0 #bbb;
+}
+.button.button-g {
+  background-color: #d98900;
+}
+.button.button-y {
+  background-color: #ce0000;
+}
+.button.button-t {
+  background-color: #00e1ff;
+}
+
+/*
+メイン
+*/
+main {
+  /* border: 2px solid #fff; */
+  align-self: center;
+  padding: 0 10%;
+}
+.gsc-search-button:hover {
+  cursor: pointer;
+}
